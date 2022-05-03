@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientFX.main.AddDonationController">
+   <children>
+      <TableView fx:id="donationView" layoutX="44.0" layoutY="160.0" prefHeight="200.0" prefWidth="233.0">
+        <columns>
+          <TableColumn fx:id="donorFirstName" prefWidth="105.3333740234375" text="First Name" />
+          <TableColumn fx:id="donorLastName" prefWidth="126.6666259765625" text="Last Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameTextField" layoutX="44.0" layoutY="102.0" prefHeight="25.0" prefWidth="225.0" promptText="Search Donor..." />
+      <TextField fx:id="idCaseTextField" layoutX="410.0" layoutY="43.0" promptText="Case id" />
+      <TextField fx:id="phoneNumber" layoutX="410.0" layoutY="89.0" promptText="phone number.." />
+      <TextField fx:id="firstName" layoutX="411.0" layoutY="134.0" promptText="first name.." />
+      <TextField fx:id="lastName" layoutX="411.0" layoutY="187.0" promptText="last name.." />
+      <TextField fx:id="address" layoutX="411.0" layoutY="234.0" promptText="address.." />
+      <TextField fx:id="amountDonated" layoutX="411.0" layoutY="283.0" promptText="amount donated.." />
+      <Button fx:id="addButton" layoutX="300.0" layoutY="330.0" mnemonicParsing="false" onAction="#addNewDonation" prefHeight="37.0" prefWidth="123.0" text="Add donation" />
+      <Label layoutX="37.0" layoutY="41.0" prefHeight="30.0" prefWidth="225.0" text="Add new donation">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="467.0" layoutY="327.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="37.0" prefWidth="83.0" text="Back " />
+   </children>
+</AnchorPane>

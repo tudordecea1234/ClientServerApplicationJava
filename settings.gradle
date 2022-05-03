@@ -1,0 +1,9 @@
+rootProject.name = "Lab4_MPP"
+include 'TeledonModel'
+include 'TeledonPersistance'
+include 'TeledonServices'
+include 'TeledonnNetworking'
+include 'TeledonServer'
+include 'TeledonClient'
+include 'TeledonClientFX'
+

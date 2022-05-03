@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'Lab4_MPP'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+def grpcVersion = '1.45.1' // CURRENT_GRPC_VERSION
+def protobufVersion = '3.19.2'
+def protocVersion = protobufVersion
+
+run {
+    standardInput = System.in
+}
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation project(':TeledonModel')
+    implementation project(':TeledonPersistance')
+    implementation project(':TeledonnNetworking')
+    implementation project(':TeledonServices')
+
+
+
+    implementation "io.grpc:grpc-protobuf:${grpcVersion}"
+    implementation "io.grpc:grpc-stub:${grpcVersion}"
+    compileOnly "org.apache.tomcat:annotations-api:6.0.53"
+}
+
+application{
+    mainClass='StartObjectServer'
+}
+test {
+    useJUnitPlatform()
+}

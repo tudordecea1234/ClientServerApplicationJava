@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="javafx-sdk-17.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../MAP/javafx-sdk-17.0.1" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_332/jre/lib/ext/access-bridge-64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../MAP/javafx-sdk-17.0.2" />
+      <root url="file://$PROJECT_DIR$/../../MAP/javafx-sdk-17.0.2" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../MAP/javafx-sdk-17.0.2" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../MAP/javafx-sdk-17.0.2" recursive="false" type="SOURCES" />
+  </library>
+</component>
